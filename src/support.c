@@ -92,7 +92,7 @@ int FileSize(char *filename)
 }
 
 /******************************************************************************
-** ReadFile()
+** GALasm_ReadFile()
 *******************************************************************************
 ** input:   *filename       name of file
 **          filesize        length of file [bytes]
@@ -105,7 +105,7 @@ int FileSize(char *filename)
 **
 ******************************************************************************/
 
-int ReadFile(char *filename, int filesize, UBYTE *filebuff)
+int GALasm_ReadFile(char *filename, int filesize, UBYTE *filebuff)
 {
     int  actlen;
     FILE *fp;

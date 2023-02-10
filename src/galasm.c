@@ -40,10 +40,10 @@
 
 
 /* Diese Arrays geben an, in welche Spalte der ent-  */
-/* sprechende Pin eingekoppelt (bzw. r¸ckgekoppelt)  */
-/* wird. F¸r die invertierende Einkopplung ist 1 zu  */
+/* sprechende Pin eingekoppelt (bzw. r√ºckgekoppelt)  */
+/* wird. F√ºr die invertierende Einkopplung ist 1 zu  */
 /* addieren, um die entsprechende Spalte zu erhalten */
-/* -1 heiﬂt: keine Einkopplung auf Matrix vorhanden  */
+/* -1 hei√üt: keine Einkopplung auf Matrix vorhanden  */
 
 
 /* A possible translation (courtesy of Babelfish)
@@ -169,7 +169,7 @@ int AssemblePldFile(char *file, struct Config *cfg)
 
 		if((fbuff = malloc(fsize)))
             {
-                if ((ReadFile(file, fsize, fbuff)))
+                if ((GALasm_ReadFile(file, fsize, fbuff)))
                 {
                     actptr  = fbuff;
                     buffend = fbuff+fsize;
@@ -470,8 +470,8 @@ int AssemblePldFile(char *file, struct Config *cfg)
 /* Boolean-Equations auswerten:
    Dabei werden die Boolean-Equations zweimal untersucht. Beim ersten
    Durchlauf werden die OLMC-Pins ausgewertet und die OLMC-Struktur ge-
-   f¸llt. Mit Hilfe dieser Struktur l‰ﬂt sich auf dem notwendigen Modus
-   (1, 2 oder 3) schlieﬂen. Beim zweiten Durchlauf wird dann die
+   f√ºllt. Mit Hilfe dieser Struktur l√§√üt sich auf dem notwendigen Modus
+   (1, 2 oder 3) schlie√üen. Beim zweiten Durchlauf wird dann die
    Fuse-Matrix erstellt.
 */
 
@@ -1982,7 +1982,7 @@ void WriteChipFile(char *filename, int gal_type)
 
 
 /******************************************************************************
-** WritePinFile(char È*filename, int gal_type)
+** WritePinFile(char √©*filename, int gal_type)
 *******************************************************************************
 ** input:   gal type
 **			filename

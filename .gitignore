@@ -1,0 +1,6 @@
+.xmake
+[Bb]uild
+
+*.a
+*.obj
+*.exe
